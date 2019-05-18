@@ -12,4 +12,4 @@ Personal portfolio site. See all the stuff!
 - Write Tagline
 - Add meta data
 - Add social links to footer
-- 
+- Turn scraper into command line tool
