@@ -30,6 +30,10 @@ p {
 
 }
 
+.text-center {
+    text-align: center;
+}
+
 
 /* SECTIONS */
 /* ======== */
@@ -46,8 +50,18 @@ header {
 
 }
 
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.column {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
 footer {
-    
+    margin-top: 3em;
 }
 
 /* ICONS / BUTTONS */

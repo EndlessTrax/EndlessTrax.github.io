@@ -11,5 +11,6 @@ Personal portfolio site. See all the stuff!
 - Write `About` copy
 - Write Tagline
 - Add meta data
+- Add Resume to Download
 - Add social links to footer
 - Turn scraper into command line tool
