@@ -15,7 +15,9 @@ html, body {
 }
 
 :root {
-    /* Add variables */
+    --primary-color: ;
+    --secondary-color: ;
+    --footer-color: #333;
 }
 
 
@@ -23,17 +25,43 @@ html, body {
 /* ========== */
 
 h1, h2, h3, h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 0.5em;
+    margin-top: 0.75em;
+}
+h1 {
 
 }
-
+h2 {
+    
+}
+h3 {
+    
+}
+h4 {
+    
+}
 p {
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.5;
+    margin-bottom: 0.75em;
+    font-size: 1.2em;
+}
 
+hr {
+    width: 50%;
+    text-align:center; 
+    margin: 2em auto;
+    /* border-color: #d9d9d9; */
 }
 
 .text-center {
     text-align: center;
 }
 
+.list-text {
+    margin-bottom: 0.2em;
+}
 
 /* SECTIONS */
 /* ======== */
@@ -43,16 +71,31 @@ p {
 }
 
 header {
+    margin-top: 3em;
+}
 
+#profile-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
 }
 
 .social-icon-section {
 
 }
 
+#about-section {
+    margin-top: 4em;
+}
+
 .two-columns {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* Two center columns with whitespace to left and right */
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+}
+.center-column {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
 }
 
 .column {
@@ -60,8 +103,31 @@ header {
     margin-right: 2em;
 }
 
+#about-content {
+    grid-column: 2;
+}
+
+#portfolio-websites {
+    grid-column: 2;
+}
+
+#portfolio-projects {
+    grid-column: 3;
+}
+
+#interviews-podcasts {
+    grid-column: 2;
+}
+
+#interviews-online {
+    grid-column: 3;
+}
+
 footer {
     margin-top: 3em;
+    background-color: var(--footer-color);
+    color: white;
+    padding: 1.5em;
 }
 
 /* ICONS / BUTTONS */
@@ -73,6 +139,13 @@ footer {
 .social-icon:hover {
 
 }
+.social-icon-footer {
+
+}
+.social-icon-footer:hover {
+
+}
+
 
 /* MEDIA QUERY */
 /* =========== */
