@@ -2,15 +2,8 @@
 Personal portfolio site. See all the stuff!
 
 ## To Do
-- Scaffold
-- Style and stuff
-- Pull RP posts
-- Add content
-  - Websites
-  - Podcasts / Interviews
 - Write `About` copy
-- Write Tagline
 - Add meta data
 - Add Resume to Download
-- Add social links to footer
 - Turn scraper into command line tool
+- Make mobile responsive
