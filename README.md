@@ -11,3 +11,5 @@ Personal portfolio site. See all the stuff!
 - Write `About` copy
 - Write Tagline
 - Add meta data
+- Add social links to footer
+- 

@@ -10,9 +10,25 @@
     padding: 0;
 }
 
+html, body {
+
+}
+
+:root {
+    /* Add variables */
+}
+
 
 /* TYPOGRAPHY */
 /* ========== */
+
+h1, h2, h3, h4 {
+
+}
+
+p {
+
+}
 
 
 /* SECTIONS */
@@ -21,13 +37,28 @@
 #page-wrapper {
 
 }
+
+header {
+
+}
+
 .social-icon-section {
+
+}
+
+footer {
     
 }
 
 /* ICONS / BUTTONS */
 /* =============== */
 
-.social-icons {
+.social-icon {
 
 }
+.social-icon:hover {
+
+}
+
+/* MEDIA QUERY */
+/* =========== */
