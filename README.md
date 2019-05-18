@@ -8,5 +8,6 @@ Personal portfolio site. See all the stuff!
 - Add content
   - Websites
   - Podcasts / Interviews
-- Write `About` copy.
-- 
+- Write `About` copy
+- Write Tagline
+- Add meta data
