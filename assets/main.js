@@ -7,8 +7,9 @@ const realPythonArticleDiv = document.getElementById("real-python-articles");
 
 $.getJSON(realPythonJsonPath, function(data) {
   data.forEach(element => {
-    let item = document.createElement("li");
-    item.innerHTML = '<p class="list-text"><a href="' + element.link + '">' + element.title + "</a></p>";
+    let item = document.createElement("p");
+    item.className = "list-text"
+    item.innerHTML = '<a href="' + element.link + '">' + element.title + "</a>";
     realPythonArticleDiv.appendChild(item);
   });
 });

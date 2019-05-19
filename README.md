@@ -6,4 +6,3 @@ Personal portfolio site. See all the stuff!
 - Add Resume to Download
 - Turn scraper into command line tool
 - Make mobile responsive
-- Test Meta Data / OG / Twitter Card
