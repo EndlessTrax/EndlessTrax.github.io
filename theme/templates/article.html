@@ -1,0 +1,60 @@
+{% extends "base.html" %} {% block head %} {{ super() }} {% block meta %}
+<!-- Meta Data / Twitter Cards / OpenGraph -->
+<!-- {% if article.description %}
+            <meta name="description" content="{{article.summary}}" />
+        {% endif %}
+
+        {% for tag in article.tags %}
+            <meta name="tags" content="{{tag}}" />
+        {% endfor %}
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="{{ article.title }} — Ricky White">
+        <meta name="twitter:description" content="{% if article.summary %}{{ article.summary|striptags }}{% else %}Business Consultant | Helping Martial Arts Schools To Build A Better Business{% endif %}">
+        <meta name="twitter:site" content="@endlesstrax">
+        <meta name="twitter:creator" content="@endlesstrax">
+        <meta name="twitter:image" content="{% if article.cover %}https://rickywhite.net/blog/{{ article.cover }}{% else %}https://rickywhite.net/static/imgs/hero-min.jpg{% endif %}">
+
+        <meta property="og:title" content="{{ article.title }} — Ricky White">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://rickywhite.net/blog/{{ article.slug }}">
+        <meta property="og:description" content="{% if article.summary %}{{ article.summary|striptags }}{% else %}Business Consultant | Helping Martial Arts Schools To Build A Better Business{% endif %}">
+        <meta property="og:image" content="{% if article.cover %}https://rickywhite.net/blog/{{ article.cover }}{% else %}https://rickywhite.net/static/imgs/hero-min.jpg{% endif %}">
+
+        {% if article.canonical %}
+            <link rel="canonical" href="{{ article.canonical }}" />
+        {% endif %} -->
+
+{% endblock meta %}
+
+<link rel="stylesheet" href="/{{ THEME_STATIC_DIR }}/css/pygment.css" />
+
+{% endblock head %} {% block content %}
+
+<section class="article-page-wrapper">
+    <div class="article-head">
+        <h1 class="article-title">{{ article.title }}</h1>
+        {% import 'translations.html' as translations with context %} {{
+    translations.translations_for(article) }}
+        <small>Published: {{ article.locale_date }}</small>
+        {% if article.modified %}
+        <small>Modified: {{ article.locale_modified }}</small>
+        {% endif %}
+    </div>
+
+    {% if article.cover %}
+    <figure class="article-cover-image">
+        <img srcset="/blog/{{ article.cover }}" alt="{{ article.title }}" />
+    </figure>
+    {% endif %}
+
+    <article class="article-content">
+        {{ article.content }}
+    </article>
+</section>
+
+{% endblock %} 
+
+{% block scripts %}
+    <script src="/{{ THEME_STATIC_DIR }}/js/sharing-buttons.js"></script>
+{% endblock scripts %}

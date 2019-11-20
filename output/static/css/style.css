@@ -1,0 +1,298 @@
+:root {
+  --primary-color: #19647e;
+  --secondary-color: #912f40;
+  --tertiary-color: #f4f7be;
+  --background-color: #e7ecef;
+  --footer-color: #292f36;
+  --heading-font: "Source Sans Pro", sans-serif;
+  --content-font: "Source Serif Pro", serif;
+}
+
+/* LAYOUT */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+aside {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+
+aside footer {
+  display: none;
+}
+
+main {
+  background-color: var(--background-color);
+  flex-grow: 1;
+}
+
+#mobile-footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+#mobile-footer p {
+  font-size: 1rem;
+}
+
+.page-wrapper {
+  margin: 2em;
+}
+
+.article-page-wrapper {
+  margin: 2em;
+}
+
+/* TYPOGRAPHY */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font);
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p,
+ul,
+ol {
+  font-family: var(--content-font);
+  font-size: 1.2rem;
+}
+
+a {
+  color: var(--secondary-color);
+}
+
+small {
+  font-size: 1rem;
+}
+
+a:hover,
+a:focus {
+  color: var(--primary-color);
+}
+
+h3.card-title {
+  margin-bottom: 0.25em;
+}
+
+h1.article-title {
+  margin-bottom: 0.25em;
+}
+
+/* NAVIGATION */
+
+nav {
+  margin-top: 1em;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0 20px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+nav ul li {
+  display: inline;
+}
+
+.nav-item {
+  padding: 0.5em;
+}
+
+.nav-item a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+  color: var(--tertiary-color);
+}
+
+/* SECTIONS */
+
+#headshot {
+  border-radius: 50%;
+  margin-top: 0.5em;
+}
+
+.card-container {
+  margin-bottom: 1em;
+  margin-top: 1rem;
+}
+
+.card-content {
+  margin-bottom: 3em;
+}
+
+.card-title {
+  color: var(--footer-color);
+}
+
+.article-head {
+  padding-bottom: 1em;
+}
+
+.article-cover-image {
+  margin: 0;
+}
+
+.article-cover-image img {
+  width: 100%;
+  height: auto;
+}
+
+.article-content {
+  margin-top: 2em;
+}
+
+/* BUTTONS & ICONS */
+
+#mobile-footer .mobile-social a {
+  text-decoration: none;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  color: var(--tertiary-color);
+}
+
+.social-icon {
+  height: 1.5em;
+  margin: 0.25em 0.1em;
+  color: white;
+  text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
+/* 
+    Extra small devices (portrait phones, less than 576px)
+    No media query for `xs` since this is the default in Bootstrap 
+  */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px) {
+  #headshot {
+    max-height: 100px;
+  }
+  .social-section {
+    display: none;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--background-color);
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    background-color: var(--primary-color);
+    height: 100vh;
+    position: fixed;
+    text-align: center;
+  }
+
+  aside footer {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+
+  aside footer p {
+    font-size: 1.1rem;
+  }
+
+  main {
+    background-color: var(--background-color);
+    margin-left: 20vw;
+  }
+
+  nav {
+    flex-grow: 1;
+    margin-top: 3em;
+  }
+
+  nav ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #headshot {
+    margin-top: 5em;
+    width: 75%;
+  }
+
+  .social-icon {
+    height: 2em;
+    margin: 0.5em 0.25em;
+    color: white;
+    text-decoration: none;
+  }
+
+  .social-section {
+    margin-top: 1em;
+  }
+
+  .social-section a {
+    color: white;
+    text-decoration: none;
+  }
+
+  #mobile-footer {
+    display: none;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) {
+  } */
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) {
+  } */

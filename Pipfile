@@ -10,7 +10,7 @@ black = "*"
 beautifulsoup4 = "*"
 requests = "*"
 click = "*"
-black = "*"
+pelican = {extras = ["markdown"],version = "*"}
 
 [requires]
 python_version = "3.7"

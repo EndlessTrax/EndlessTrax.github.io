@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}Ricky White{% endblock title %} 
+
+{% block meta %}
+<!-- Meta Data / Twitter Cards / OpenGraph -->
+<!-- <meta name="description" content="Martial Artist and Developer">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog — Ricky White">
+    <meta name="twitter:description" content="Martial Artist and Developer">
+    <meta name="twitter:site" content="@endlesstrax">
+    <meta name="twitter:creator" content="@endlesstrax">
+    <meta name="twitter:image" content="https://rickywhite.net/static/imgs/hero-min.jpg">
+
+    <meta property="og:title" content="Blog — Ricky White">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Martial Artist and Developer">
+    <meta property="og:image" content="https://rickywhite.net/static/imgs/hero-min.jpg"> -->
+{% endblock meta %} {% block content %}
+
+<section class="page-wrapper">
+  {% for article in articles_page.object_list %} {% if article.status == "published" %}
+
+  <article class="card-container">
+    <div class="card-content">
+      <h3 class="card-title">{{ article.title }}</h3>
+      <small>Published: {{ article.locale_date }}</small>
+      <p>{{ article.summary }}</p>
+      <a href="../{{ article.url }}"><p>Read the full article &raquo;</p></a>
+    </div>
+  </article>
+
+  {% endif %} {% endfor %}
+
+  <div>
+    {% if articles_page.has_other_pages() %} {% include 'pagination.html' %} {% endif %}
+  </div>
+</section>
+
+{% endblock content %}

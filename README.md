@@ -4,3 +4,5 @@ Personal portfolio site. See all the stuff at [rickywhite.dev](https://rickywhit
 
 ## To Do
 - Turn scraper into command line tool
+- Check sitemap working
+- 

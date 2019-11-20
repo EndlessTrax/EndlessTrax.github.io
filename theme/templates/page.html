@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ page.title }} — Ricky White{% endblock title %}
+
+{% block meta %}
+    <!-- Meta Data / Twitter Cards / OpenGraph -->
+    <!-- <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Business Consultant | Helping Martial Arts Schools To Build A Better Business{% endif %}">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title }} — Ricky White">
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}Business Consultant | Helping Martial Arts Schools To Build A Better Business{% endif %}">
+    <meta name="twitter:site" content="@endlesstrax">
+    <meta name="twitter:creator" content="@endlesstrax">
+    <meta name="twitter:image" content="{% if page.cover %}https://rickywhite.net/{{ page.cover }}{% else %}https://rickywhite.net/static/imgs/hero-min.jpg{% endif %}">
+
+    <meta property="og:title" content="{{ page.title }} — Ricky White">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Business Consultant | Helping Martial Arts Schools To Build A Better Business{% endif %}">
+    <meta property="og:image" content="{% if page.cover %}https://rickywhite.net/{{ page.cover }}{% else %}https://rickywhite.net/static/imgs/hero-min.jpg{% endif %}"> -->
+
+{% endblock meta %}
+
+{% block content %}  
+
+<section class="page-wrapper">
+            <div>
+				{% import 'translations.html' as translations with context %}
+				{{ translations.translations_for(page) }}
+			
+				{{ page.content }}
+			
+			</div>
+</section>
+
+{% endblock %}
