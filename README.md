@@ -3,16 +3,11 @@
 Personal portfolio site. See all the stuff at [rickywhite.dev](https://rickywhite.dev/)!
 
 ## To Do
-- Turn scraper into command line tool
-- Check sitemap working
 - Meta tags
 - Remove old files
-- check all templates
+- Check all templates
 - Add sharing buttons to articles. 
-- About page copy
-- Contact Page copy
-- Articles Page Copy
-- Interviews Page Copy
-- Porfolio Page Copy
-- Add amazon links to my books
-- 
+- Add share buttons to blog posts
+- Add Google Analytics
+- Create 5 Blog Posts
+- Fix tag, author, and archive page

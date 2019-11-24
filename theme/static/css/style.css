@@ -63,7 +63,7 @@ h2,
 h3,
 h4 {
   font-family: var(--heading-font);
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 h1 {
@@ -91,10 +91,17 @@ ol {
 
 a {
   color: var(--secondary-color);
+  text-decoration: none;
 }
 
 small {
   font-size: 1rem;
+}
+
+hr {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-color: var(--primary-color);
 }
 
 a:hover,
@@ -179,7 +186,16 @@ nav ul li {
   margin-top: 2em;
 }
 
-/* BUTTONS & ICONS */
+/* BUTTONS & ICONS & IMAGES */
+
+img {
+  margin-top:1em;
+  margin-bottom: 1em;
+}
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
 
 #mobile-footer .mobile-social a {
   text-decoration: none;
@@ -195,6 +211,12 @@ nav ul li {
   margin: 0.25em 0.1em;
   color: white;
   text-decoration: none;
+}
+
+/* UTILITIES */
+
+.centered {
+  text-align: center;
 }
 
 /* MEDIA QUERIES */

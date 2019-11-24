@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% block head %} {{ super() }} {% block meta %}
 <!-- Meta Data / Twitter Cards / OpenGraph -->
-<!-- {% if article.description %}
+{% if article.description %}
             <meta name="description" content="{{article.summary}}" />
         {% endif %}
 
@@ -10,20 +10,20 @@
 
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="{{ article.title }} — Ricky White">
-        <meta name="twitter:description" content="{% if article.summary %}{{ article.summary|striptags }}{% else %}Business Consultant | Helping Martial Arts Schools To Build A Better Business{% endif %}">
+        <meta name="twitter:description" content="{% if article.summary %}{{ article.summary|striptags }}{% else %}Ricky White — Developer{% endif %}">
         <meta name="twitter:site" content="@endlesstrax">
         <meta name="twitter:creator" content="@endlesstrax">
-        <meta name="twitter:image" content="{% if article.cover %}https://rickywhite.net/blog/{{ article.cover }}{% else %}https://rickywhite.net/static/imgs/hero-min.jpg{% endif %}">
+        <meta name="twitter:image" content="{% if article.cover %}https://rickywhite.dev/blog/{{ article.cover }}{% else %}https://rickywhite.net/static/imgs/hero-min.jpg{% endif %}">
 
         <meta property="og:title" content="{{ article.title }} — Ricky White">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://rickywhite.net/blog/{{ article.slug }}">
-        <meta property="og:description" content="{% if article.summary %}{{ article.summary|striptags }}{% else %}Business Consultant | Helping Martial Arts Schools To Build A Better Business{% endif %}">
-        <meta property="og:image" content="{% if article.cover %}https://rickywhite.net/blog/{{ article.cover }}{% else %}https://rickywhite.net/static/imgs/hero-min.jpg{% endif %}">
+        <meta property="og:url" content="https://rickywhite.dev/blog/{{ article.slug }}">
+        <meta property="og:description" content="{% if article.summary %}{{ article.summary|striptags }}{% else %}Ricky White — Developer{% endif %}">
+        <meta property="og:image" content="{% if article.cover %}https://rickywhite.dev/blog/{{ article.cover }}{% else %}https://rickywhite.dev/static/imgs/headshot.jpg{% endif %}">
 
         {% if article.canonical %}
             <link rel="canonical" href="{{ article.canonical }}" />
-        {% endif %} -->
+        {% endif %}
 
 {% endblock meta %}
 
